@@ -24,3 +24,5 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, function() {
     console.log("Server started at PORT: " + PORT);
 });
+
+module.exports = app;
