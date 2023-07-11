@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const mongoDbPath = "mongodb+srv://mohdasifparambil:<password>@cluster0.af4aprb.mongodb.net/notesdb";
+const mongoDbPath = "mongodb+srv://mohdasifparambil:Asif123@cluster0.af4aprb.mongodb.net/notesdb";
 mongoose.connect(mongoDbPath).then(function() {
     app.get("/", function(req, res) {
         const response = { statuscode: res.statusCode, message: "API Works!" };
